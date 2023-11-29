@@ -1,0 +1,99 @@
+
+ <!DOCTYPE html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Hire Me Form</title>
+    <style>
+        footer{
+  background: #4070f4;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: absolute ;
+  bottom: 0%;
+  width: 100%;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          <div class="logo"><a href="index.html">Portfolio.</a></div>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+          </ul>
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1>Hire Me</h1>
+        <form id="hire-me-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+    <section class="footer" id="footer">
+      <footer>
+        <div class="text">
+          <span>Created By Ajanur Rahman</span>
+        </div>
+      </footer>
+      </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("hire-me-form");
+
+    form.addEventListener("submit", function (e) {
+       
+
+        // You can add your own logic here for form submission, e.g., sending data to a server.
+        // For this example, we'll just show an alert.
+        alert("Form submitted! Thank you for your interest.");
+         
+    });
+});
+
+    </script>
+</body>
+</html>
