@@ -74,6 +74,7 @@ $(document).ready(function(){
 
 document.getElementById('download-cv').addEventListener('click', function() {
     // Specify the path to the CV file within the 'cv_files' folder
+    
     const cvUrl = 'ajanurcv.pdf';
     const a = document.createElement('a');
     a.style.display = 'none';
