@@ -259,7 +259,9 @@ section .title::after{
     color: crimson;
     background: none;
 }
-
+#download-cv{
+    cursor:pointer;
+}
 
 /* services section styling */
 .services, .teams{
